@@ -1,0 +1,102 @@
+<html lang="en">
+<title> HyperCord </title>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="Assets/hypercord.png">
+<meta content="HyperCord" property="og:title">
+<script src="JS/offline.js"></script>
+<meta content="Download HyperCord Application" property="og:description">
+<meta content="https://hypercord.github.io/download" property="og:url">
+<meta property="og:image" content="https://hypercord.github.io/Assets/hypercord.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="#f6cf04" data-react-helmet="true" name="theme-color">
+<meta property="twitter:url " content="https://hypercord.github.io/download">
+<meta property="twitter:title" content="HyperCord">
+<meta property="twitter:image" content="https://hypercord.github.io/Assets/hypercord.png">
+<meta property="twitter:description" content="Download HyperCord Application">
+</head>
+<link rel="stylesheet" type="text/css" href="CSS/download.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="main.js"></script>
+<body style="background-color: #292929;">
+<div class="download">
+    <button class="button" onclick="onDownload()">
+        <i class="fa fa-download"></i>
+        <span>Download</span>
+</div>
+<div class="windows">
+    <img src="Assets/windows.png" width="250" height="250">
+</div>
+<div class="mac">
+    <img src="Assets/mac.png" width="250" height="250">
+</div>
+<div class="linux">
+    <img src="Assets/linux.png" width="300" height="330">
+</div>
+
+<div class="content">
+    <h1>Avaliable for Windows, Mac and Linux!</h1>
+</div>
+<style>
+    html {
+        font-size: 75%;
+    overflow-x: hidden;
+    }
+.download button{
+    position: absolute;
+    background-color: #f6cf04;
+    border: none;
+    color: #292929;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download button:hover{
+    box-shadow: 0px 0px 20px #f6cf04;
+}
+
+.windows{
+    position: absolute;
+    left: 5%;
+    top:40%;
+}
+
+.mac {
+    position: absolute;
+    left: 43%;
+    top:10%;
+}
+
+.linux {
+    position: absolute;
+    left: 74%;
+    top:40%;
+}
+
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #f6cf04;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<script>
+function onDownload(){
+    window.location.href = "./hypercordapp.zip";
+}
+</script>
+</div>
+</body>
+</html>
