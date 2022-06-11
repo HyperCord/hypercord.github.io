@@ -5,6 +5,27 @@
     --gradient:linear-gradient(90deg, var(--yellow), var(--yellow));
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f6cf04;
+    border-radius: 50px;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f6cf04;
+  }
+
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
