@@ -158,6 +158,12 @@ body{
     filter: drop-shadow(0 0 1.5rem #f6cf04);
 }
 
+@media all and (max-width: 768px){
+    .image-2 img{
+        width:400px;
+    }
+}
+
 
 @keyframes float{
     0%, 100%{
@@ -189,6 +195,14 @@ body{
 }
 
 
+ @media screen and (max-width: 768px){
+    .content h3{
+        font-size: 3.5rem;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+}
 
 .home .image img{
     width:380px;
@@ -206,6 +220,19 @@ body{
     }
     50%{
         transform: translateY(-3.5rem);
+    }
+}
+
+@media all and (max-width: 768px){
+    .home .image img{
+        width:280px;
+        left: 25px;
+        top: -20px;
+        -webkit-filter: drop-shadow(0 0.9rem #f6cf04);
+        filter: drop-shadow(0 0 0.9rem #f6cf04);
+        animation: float 1s ease-in-out infinite;
+        top: -20px;
+
     }
 }
 
@@ -369,10 +396,6 @@ body{
         flex-flow: column-reverse;
     }
 
-    .home .image img{
-        width:100%;
-    }
-
     .home .content h3{
         font-size: 3.6rem;
     }
@@ -407,50 +430,6 @@ body{
     }
 
 }
-
-/* Dropdown Button */
-.translate-btn {
-    background-color: #292929;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .translate {
-    position: relative;
-    display: inline-block;
-    left: 1500%;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .languages {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .languages a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .languages a:hover {background-color: #292929;}
-  
-  /* Show the dropdown menu on hover */
-  .translate:hover .languages {display:block;}
-
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .translate:hover .translatebtn {background-color: white;}
 
 .dwnld{
     background-color: #202020;
@@ -489,4 +468,11 @@ body{
 
 .download a:hover{
     box-shadow: 0 .5rem 2rem var(--yellow);
+}
+
+@media (max-width:768px){
+    .download a{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
