@@ -1,5 +1,6 @@
 window.addEventListener('offline', function(event){
-    alert("You are currently offline, please check your internet connection");
+    //reload the window
+    window.location.reload();
     if(navigator.onLine == false){
         window.location.reload();
     }

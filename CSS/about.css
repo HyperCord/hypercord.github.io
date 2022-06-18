@@ -1,0 +1,311 @@
+
+.footer .box-container{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 100px solid #292929;
+}
+
+.footer .box-container .box{
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+    margin-top: none;
+    margin-bottom: none;
+}
+
+.footer .box-container .box h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#f6cf04;
+    text-underline-offset: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.footer .box-container .box a:hover{
+    display: block;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .box-container .box .info{
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .box-container .box .info i{
+    font-size: 2.5rem;
+    color:white;
+    margin-right: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .credit{
+    background-color: black;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#fff;
+    padding:2.5rem 1rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer h3{
+    font-family:Arial;
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#f6cf04;
+    text-underline-offset: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer .status{
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+    body {
+        background-color: #292929;
+        font-family: 'Roboto', sans-serif;
+    }
+html {
+    font-size: 75%;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f6cf04;
+    border-radius: 50px;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f6cf04;
+  }
+
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content h2{
+    position: relative;
+    display: flex;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.content h1{
+    position: relative;
+    display: flex;
+    color:  #f6cf04;
+    text-shadow : 0 0 50px #f6cf04;
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100;
+    margin-bottom: 30;
+}
+
+.images{
+    position: relative;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*make content responsive*/
+@media only screen and (max-width: 800px) {
+    .content h2{
+        font-size: 2rem;
+    }
+    .content h1{
+        font-size: 4rem;
+    }
+}
+
+.images img{
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+    width: 35%;
+    height: 35%;
+}
+
+.faq {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.faq h1{
+    position: relative;
+    display: flex;
+    color: #f6cf04;
+    font-size: 6rem;
+    border-radius: 10px;
+    text-shadow: 0px 0px 20px #f6cf04;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.faq h2{
+    position: relative;
+    display: flex;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.faq .collapse{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.faq .collapse .question{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.faq .collapse .question h3{
+    position: relative;
+    display: flex;
+    color: #f6cf04;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.faq .collapse .question p{
+    position: relative;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.images img:hover{
+    box-shadow: 0px 0px 20px #f6cf04;
+    width: 40%;
+    height: 40%;
+}
+
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    background: transparent;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    /*make the image size as it is*/
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+header .logo span{
+    color:var(--yellow);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    color:white;
+}
+
+header .navbar a:hover{
+    color:white;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--yellow);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
